@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d836485e3f.js" crossorigin="anonymous"></script>   
+</head>
+<body>
+    <header>
+        <img src="images/LogoHearts.png" alt="três corações vermelhos do lado um do outro, simulando as três vidas de um personagem de um jogo">
+        <h1 class="title">AluraGeek</h1>
+    </header>
+
+    <main>
+        <section id="productsContainer">
+            <h2 class="title" id="productsTitle">Meus produtos:</h2>
+            <div id="products">
+                <ul id="productsList">
+                    
+                </ul>
+
+            </div>
+        </section>
+
+
+        <section id="formContainer">
+            <h2 class="title" id="formTitle">
+                Adicionar Produto:
+            </h2>
+            <form id="postProductForm" data-formulario>
+                <input required name="nome" id="nome" class="formInput" placeholder="nome..." data-nome>
+
+                <input required name="preco" id="preco" class="formInput" placeholder="valor.." data-preco>
+
+                <input required name="image" id="image" class="formInput" placeholder="imagem..." data-imagem>
+
+                <div id="formButton">
+                    <input type="submit" id="submitButton">
+                    <button class="button" id="cleanButton">Limpar</button>
+                </div>
+            </form>
+            
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="logo">
+            <img src="images/LogoHearts.png" alt="três corações vermelhos do lado um do outro, simulando as três vidas de um personagem de um jogo">
+            <h1 class="title">AluraGeek</h1>
+        </div>
+        
+        <p>Desenvolvido por Arthur Rodrigues</p>
+    </footer>
+<script src="scripts/showProducts.js" type="module"></script>
+<script src="scripts/criarProduto.js" type="module"></script>
+<script src="scripts/deletarProduto.js" type="module"></script>
+        
+</body>
+</html>

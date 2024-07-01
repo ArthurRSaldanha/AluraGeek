@@ -1,0 +1,16 @@
+{
+  "produtos": [
+    {
+      "id": "1",
+      "nome": "Stormtrooper",
+      "preco": "60",
+      "imagem": "https://img.elo7.com.br/product/zoom/3228DE1/caneca-3d-star-wars-stormtrooper-presente-star-wars.jpg"
+    },
+    {
+      "nome": "Rafael Anão",
+      "preco": "10",
+      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTObOGWrwcZ8ldPTgU4saWSZuJLLbp0OWaCNQ&s",
+      "id": "-lB7zCd"
+    }
+  ]
+}

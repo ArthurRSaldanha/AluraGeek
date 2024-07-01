@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Press+Start+2P&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --header-background-color: #5300C8;
+    --title-color: #E5E5E5;
+    --text-color: #FFFFFF;
+    --product-background-color: #5D04D9;
+    --form-color: #03318C;
+}
+
+body{
+    height: 100vh;
+}
+
+header,
+footer{
+    background-color: var(--header-background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+footer{
+    flex-direction: column;
+    gap: .5rem
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+
+.title{
+    font-size: 1.5rem;
+    font-family: 'Press Start 2P', system-ui;
+    font-weight: 400;
+    color: var(--title-color);
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+    margin: 3.1rem 1.8rem;
+}
+
+section{
+    padding: 2.5rem;
+    height: fit-content;
+}
+
+#productsTitle,
+#formTitle{
+    color: #000000;
+}
+
+#productsContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#products{
+    box-shadow: -0.75rem 0.6rem 0.36rem rgba(0, 0, 0, 0.25);
+    border-radius: .2rem;
+}
+
+#productsList{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4.5rem .62rem;
+    list-style: none;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    gap: .62rem;
+
+    padding: .62rem;
+    background-color: var(--product-background-color);
+    border: 0.18rem solid #000000;
+    border-radius: .62rem;
+    color: var(--text-color);
+}
+
+#productBanner{
+    max-height: 12rem;
+}
+
+.productImage{
+    object-fit: cover;
+    width: 100%;
+    max-height: 10rem;
+    border-radius: 1rem;
+    border: .18rem solid #000;
+}
+
+#productDescription{
+    display: flex;
+    flex-direction: column;
+    gap: .62rem;
+}
+
+#productPriceInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product,
+input,
+.button{
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 700;
+}
+
+#formContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#formContainer,
+form{
+    gap: 2.5rem;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formInput{
+    width: 24.5rem;
+    padding: 0.62rem;
+    border: 0.18rem solid var(--form-color);
+    border-radius: 1rem;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+::-webkit-input-placeholder {
+   color: var(--form-color);
+}
+
+#formButton{
+    width: 24.5rem;
+    display: flex;
+    justify-content: space-around;
+    gap: .5rem;
+}
+
+.button,
+#submitButton{
+    padding: .75rem 3rem;
+    border-radius: .5rem;
+}
+
+#submitButton{
+    background-color: var(--form-color);
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+#cleanButton{
+    background-color: #FFF;
+}
+
+@media (max-width: 1200px) {
+    body{
+        main{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    #formTitle{
+        text-align: center;
+    }
+
+    #productsList{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
